@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="mecha.js"></script>
+
+    </head>
+    <body>
+        <article>
+            <header>
+                Licitacion CEDENAR. sdg 022-2017
+            </header>
+            <div id="formula">
+                <p><h1> Formula:</h1></p>
+                <p class ="ecuacion"> Vref = ((2Vof) + (2*Vmenor) + &sum; Vi) / m+4 </p>
+                Donde:
+                <ul>
+                    <li><h2>Vref:</h2> valor de referencia.</li>
+                    <li><h2>Vmenor:</h2> Valor de la oferta de menor precio aceptada en la evaluacion.</li>
+                    <li><h2>Vof:</h2> valor oficial del presupuesto</li>
+                    <li><h2>Vi :</h2> Ofertans en el rango del 90% y el 100% del presupuesto oficial. Sin incluir la de menor precio aceptada en la evaluacion.</li>
+                    <li><h2>m:</h2> numero de ofertas en el rango del 90% y el 100% del presupuesto oficial sin incluir la de menor precio aceptada en la evaluacion.</li>
+                </ul>
+            </div>
+            <div id="formula">
+                <p><h1> Puntaje:</h1></p>
+                <div>
+                    Se asigna para todas las ofertas independientes si se encuentra o no en el rango establecido con la siguiente expresion.
+                </div>
+                <ul>
+                    <li>Ppi = (1- ((Vref-Vi)/Vref) ) * 600
+                        Si Vref > Vi</li>
+                    
+                    <li>Ppi = (1- ((Vi-Vref)/Vref) ) * 600
+                        Si Vref < Vi
+                    </li>
+                </ul>
+                Donde Ppi: valor del puntaje precio de la oferta.
+            </div>
+            
+            <div id="entrada">
+                
+                <div>
+                    <h1>Datos de entrada:</h1>
+                    <ul>
+                        <li><div>M = <span id="valorM">0</span></div></li>
+                        <li><div>Vof = 2.285.000.000 (Valor oficial) </div></li>
+                        <li><div><span>Vmenor = </span><span id="valorMin"> </span></div></li>
+                        <li><div><span>Vref = </span><span id="valorRef"> </span></div></li>
+                    </ul>
+                    <h1>Participantes: </h1>
+                    <div id="nuevoP"> + Anadir Participante </div>
+                    <div id="reset"> Reset </div>
+                    (Valores validos entre 2.056.500.000 y 2.285.000.000)
+                    <ul id="participantes">
+
+                        <li><h2>Participante 1 :</h2>
+                            <input id="input1" type="number" name="p1" min="2056500000" max="2285000000" value="2285000000"
+                                   step="228500">
+                            <span> % del Vof = </span><span class="porcentajes" id="porcentaje1">100</span> <span> pp1 = </span><span id="pp1"></span>
+                        </li>
+                </ul>
+                <div id="calcular"> Computar puntajes </div>
+            </div>
+            <div id="output">
+            </div>
+            </div>
+        </article>
+    </body>
+</html>
