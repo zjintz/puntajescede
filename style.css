@@ -9,9 +9,13 @@ p {
 h1{
     font-size: 0.95rem;
 }
+h1.total{
+    display: inline-block;
+    font-size: 0.95rem;
+}
 h2{
     font-size: 0.9rem;
-    display: inline;
+    display: inline-block;
 }
 article {
     font-size: 0.9rem;
@@ -27,8 +31,7 @@ span{
 
 input{
     margin: 7px;
-    width: 150px;
-
+    width: 130px;
 }
 .ecuacion{
     font-weight: bold;
@@ -71,7 +74,66 @@ input{
     background-color: orange;
 }
 
+.vof_percent{
+    margin: 7px;
+    background-color: cyan;
+}
 .porcentajes {
     display: inline-block;
     width: 100px;
 }
+
+#participantes li{
+    width: 98%;
+    border-style: solid;
+    border-color: blue;
+    border-width: 1px;
+    margin: 2px;
+}
+
+label{
+    Background-color: white;
+}
+.sub_li{
+    vertical-align: text-top;
+    display: inline-block;
+}
+.section{
+    margin: 3px;
+    padding: 7px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    vertical-align: text-top;
+    display: inline-block;
+    height: 130px;
+    
+}
+
+.section1{
+    width: 450px;
+    margin: 3px;
+    padding: 7px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    vertical-align: text-top;
+    display: inline-block;
+    height: 130px;
+    
+}
+
+.section2{
+    width: 850px;
+    margin: 3px;
+    padding: 7px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    vertical-align: text-top;
+    display: inline-block;
+    height: 130px;
+    
+}
+
+

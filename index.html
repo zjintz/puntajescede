@@ -53,17 +53,51 @@
                     <div id="reset"> Reset </div>
                     (Valores validos entre 2.056.500.000 y 2.285.000.000)
                     <ul id="participantes">
-
-                        <li><h2>Participante 1 :</h2>
-                            <input id="input1" type="number" name="p1" min="2056500000" max="2285000000" value="2285000000"
-                                   step="228500">
-                            <span> % del Vof = </span><span class="porcentajes" id="porcentaje1">100</span> <span> pp1 = </span><span id="pp1"></span>
+                        <li>
+                            <div class="section1" ><h1> Factor precio</h1>
+                                <div class="sub_li"><h2>Participante 1 :</h2></div><div class="sub_li"><div><label for="input1">Precio </label>
+                                    <input class="precio" id="input1" type="number" name="p1" min="2056500000" max="2285000000" value="2285000000" step="228500">
+                                </div>
+                                <div>
+                                    <span class="vof_percent"> % del Vof = </span><span class="porcentajes" id="porcentaje1">100</span>
+                                </div>
+                                </div><div class="sub_li" ><span>pp1 = </span><span id="pp1">0</span></div>
+                            </div><div class="section2"><h1>Razones financieras</h1>
+                                <div>
+                                    <label for="activoSLMM1"> Activos SLMM</label>
+                                    <input id="activosSLMM1" type="number" value="0" step="1">
+                                    <label for="pasivosSLMM1"> Pasivos SLMM</label>
+                                    <input id="pasivosSLMM1" type="number" value="0" step="1">
+                                    <div class="sub_li" >
+                                        <div>
+                                            <span>Capital Trabajo = </span><span id="ct1">1</span>
+                                            <span>Puntaje = </span><span id="puntajeCT1"> 0</span>
+                                        </div>
+                                        <span>Indice Liquidez = </span><span id="il1">0</span>
+                                        <span>Puntaje = </span><span id="puntajeIL1">0</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="activosTotal1"> Activo Total</label>
+                                    <input id="activosTotal1" type="number" value="0" step="1">
+                                    <label for="pasivosTotal1"> Pasivo Total</label>
+                                    <input id="pasivosTotal1" type="number" value="0" step="1">
+                                    <div class="sub_li" >
+                                        <span>Nivel Endeudamiento = </span><span id="ne1"></span>
+                                        <span>Puntaje = </span><span id="puntajeNE1">0</span>
+                                    </div>
+                                </div>
+                            </div><div class ="section">
+                                <div class="sub_li" >
+                                    <h1 class="total">Puntaje total = </h1><span id="total1">0</span>
+                                </div>
+                            </div>
                         </li>
-                </ul>
-                <div id="calcular"> Computar puntajes </div>
-            </div>
-            <div id="output">
-            </div>
+                    </ul>
+                    <div id="calcular"> Computar puntajes Precio </div>
+                </div>
+                <div id="output">
+                </div>
             </div>
         </article>
     </body>
